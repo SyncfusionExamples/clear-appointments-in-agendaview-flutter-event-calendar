@@ -1,2 +1,1 @@
-# clear-appointments-in-agendaview-flutter-event-calendar
-How to clear appointments in the agendaview on month change in the Flutter event calendar (SfCalendar)
+**[View document in Syncfusion Flutter Knowledge base](https://www.syncfusion.com/kb/12089/how-to-clear-the-appointments-in-month-agenda-view-using-onviewchange-callback-in-flutter)**
