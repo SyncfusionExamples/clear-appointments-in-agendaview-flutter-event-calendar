@@ -11,13 +11,8 @@ class AppointmentClear extends StatefulWidget {
 }
 
 class AppointmentClearState extends State<AppointmentClear> {
-  CalendarController _calendarController;
+  final CalendarController _calendarController=CalendarController();
 
-  @override
-  void initState() {
-    _calendarController = CalendarController();
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +31,7 @@ class AppointmentClearState extends State<AppointmentClear> {
   }
 
   void calendarViewChanged(ViewChangedDetails viewChangedDetails) {
-    SchedulerBinding.instance.addPostFrameCallback((timeStamp) {
+    SchedulerBinding.instance!.addPostFrameCallback((timeStamp) {
       _calendarController.selectedDate=null;
     });
   }
